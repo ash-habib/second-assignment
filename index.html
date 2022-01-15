@@ -12,18 +12,21 @@
     <!-- First section start -->
 
     <main>
+        
         <section class="container">
-                <nav class="navbars">
-                    <div class="navbar" id="mynavbar">
-                        <a href="#">Home</a>
-                        <a href="#">Clubs</a>
-                        <a href="#">World Cup 2023</a>
-                        <a href="#">Upcoming Matches</a>
-                        <a href="#">Contact</a>
-                        <button class="first-button"><i class="fas fa-sign-in-alt"></i>  Login</button>
+            <header>
+                <nav class="navbar" id="mynavbar">
+                    <!-- <div class="navbar" id="mynavbar"> -->
+                        <a href="#home">Home</a>
+                        <a href="#clubs">Clubs</a>
+                        <a href="#wrold cup 2023">World Cup 2023</a>
+                        <a href="#upcoming matches">Upcoming Matches</a>
+                        <a href="#contact">Contact</a>
+                        <button class="first-button"><i class="fas fa-sign-in-alt"></i>Login</button>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
                     </div>
                 </nav>
+            </header>
             <div class="both-two">
                 <div class="first-title">
                     <h1>Conmebol Copa America 2021</h1>
@@ -147,15 +150,14 @@
     <!-- JavaScript for Navbar start -->
         <script>
             function myFunction() {
-                var x = document.getElementById("mynavbar");
-                if (x.className === "navbar") {
-                    x.className += " responsive";
-                }
-                else {
-                    x.className = "navbar";
-                }
-            }
-        </script>
+            var x = document.getElementById("mynavbar");
+            if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+        x.className = "navbar";
+     }
+    }
+</script>
     <!-- JavaScript for Navbar end -->
 </body>
 </html>

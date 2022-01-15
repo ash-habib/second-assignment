@@ -10,7 +10,6 @@
  width: 100%;
  height: 770px;
  background-color: #2D25A0;
- ;   
 }
 /* navbar start */
 .navbar {
@@ -39,10 +38,11 @@
 /* navbar end */
 /* button start */
 .first-button {
+    position: relative;
     float: right;
     padding: 10px 60px;
-    margin-top: 10px;
-    margin-right: 124px;
+    top: 10px;
+    right: 124px;
     background-color:#E02C6D;
     color: white;
     border: none;
@@ -84,7 +84,7 @@
 
 /* first title start */
 .first-title {
-    position: absolute;
+    position: relative;
     width: 485px;
     height: 230px;
     top: 207px;
@@ -99,12 +99,12 @@
 /* first title end */
 
 /* first banner start */
-    .football-banner {
-        position:absolute;
+    .first-image img {
+        position: relative;
         width: 556.01px;
         height: 438px;
         left: 760.01px;
-        top: 153px;
+        top: -40px;
     }
 /* first banner end */
 
@@ -112,12 +112,15 @@
 
 /* second container start */
     .container-2 {
-        margin: 70px 150px;
+        position: relative;
+        width: 100%;
+        margin: 70px 0px;
+
     }
     .main-gallery {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 30px;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: -0px;
     }
     .gallery {
         position: relative;
@@ -127,6 +130,7 @@
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
         padding: 15px;
         margin-bottom: 27px;
+        margin-left: 50px;
     }
     .gallery img {
         width: 100%;
@@ -291,19 +295,20 @@
 
 
 /* media scren for responsive navbar start */
-@media  screen and (max-width: 600px){
+@media  screen and (max-width: 688px){
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
         float: left;
         display: block;
+
     }
 
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 688px) {
     .navbar.responsive {position: relative;}
     .navbar.responsive .icon {
-        position: absolute;
+        position: relative;
         right: 0;
         top: 0;
     }
@@ -312,6 +317,101 @@
         float: none;
         display: block;
         text-align: center;
+    }
+}
+@media screen and (max-width: 688px) {
+    main {
+        margin: 0;
+        padding: 0;
+    }
+    .first-button {
+        position: relative;
+        top: 13px;
+        right: 21px;
+    }
+    .second-button {
+        position: relative;
+        top: -30px;
+    }
+    .first-title {
+        position: relative;
+        left: 16px;
+        top: 112px;
+        width: 278px;
+        height: 138px;
+    }
+    .first-title h1 {
+        font-size: 36px;
+        line-height: 50px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .football-banner.football-banner {
+        position: relative;
+        left: 14px;
+        top: 214px;
+        width: 329px;
+        height: 259px;
+    }
+}
+@media screen and (max-width: 688px) {
+    .container {
+        max-width: 100%;
+    }
+    .container-2 {
+       width: 100%;
+    }
+    .sections{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+    }
+    .section-title {
+        position: relative;
+        width: 329px;
+        height: 299px;
+        margin-top: 0px;
+        left: 110px;
+    }
+    .section-image img {
+        position: relative;
+        width: 328px;
+        height: 248px;
+        /* margin: 110px 150px; */
+        top: 90px;
+        left: 100px;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-part img {
+        position: relative;
+        left: 215px;
+        top: 10px;
+        width: 328px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 688px) {
+    .main-gallery {
+        display: grid;
+        grid-column-gap: 0;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0px -45px;
+        padding: 0;
+    }
+    .gallery {
+        position: relative;
+        /* margin-left: 120px; */
+        left: 60px;
+    }
+    .icon-part, .title-part {
+        position: relative;
+        left: 35px;
+        top: -65px;
     }
 }
 /* meida screen for responsive navbar end */
